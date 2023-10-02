@@ -1,4 +1,4 @@
-name: Deploy blog
+name: Deploy Website
 on:
     push:
         branches:
@@ -15,12 +15,12 @@ jobs:
               run: |
                 npm ci
                 npm run build
-              working-directory: ./designbuildsell-blog
+              working-directory: ./designbuildsell
 
             - name: Deploy
               uses: JamesIves/github-pages-deploy-action@v4
               with:
                 branch: gh-pages
-                folder: designbuildsell-blog/build
+                folder: designbuildsell/build
 
 

@@ -64,23 +64,29 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Home',
+        title: '',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
+          /*
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
+            position: 'right',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'right'},
+          */
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            to: '/design', label: 'Design', position: 'left'
+          },
+          {
+            to: '/build', label: 'Build', position: 'left'
+          },
+          {
+            to: '/sell', label: 'Sell', position: 'left'
           },
         ],
       },
@@ -88,11 +94,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Content',
             items: [
               {
+                label: 'Essays',
+                to: '/blog',
+              },
+              {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs',
               },
             ],
           },
@@ -104,12 +114,16 @@ const config = {
                 href: 'https://twitter.com/designbuildsell',
               },
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'YouTube',
+                href: 'https://youtube.com/@DesignBuildSell',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'SubStack',
+                href: 'https://designbuildsell.substack.com',
+              },
+              {
+                label: 'Twitch',
+                href: 'https://twitch.com/designbuildsell',
               },
 
             ],
@@ -117,9 +131,10 @@ const config = {
           {
             title: 'More',
             items: [
+
               {
-                label: 'Essays',
-                to: '/blog',
+                label: 'Site Map',
+                href: 'https://designbuildsell.substack.com',
               },
               {
                 label: 'GitHub',

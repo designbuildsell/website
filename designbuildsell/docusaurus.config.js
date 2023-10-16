@@ -56,6 +56,8 @@ const config = {
         },
       }),
     ],
+    // From https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-sitemap#ex-config-preset
+    // deleted
   ],
 
   themeConfig:
@@ -131,14 +133,9 @@ const config = {
           {
             title: 'More',
             items: [
-
               {
-                label: 'Site Map',
-                href: 'https://designbuildsell.substack.com',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/designbuildsell',
+                label: 'Terms of Service',
+                to: '/tos',
               },
             ],
           },
